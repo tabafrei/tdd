@@ -1,5 +1,5 @@
 import { Task } from "../../entities/task";
-import { ListTasksRepository } from "./repository/listTasksRepository";
+import { ListTasksRepository } from "../../usecases/repository/listTasksRepository";
 
 export class DbListTasks implements ListTasksRepository {
     constructor(private readonly listTasksRepository: ListTasksRepository) {}

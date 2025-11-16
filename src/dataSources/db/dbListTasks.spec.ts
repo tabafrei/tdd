@@ -1,6 +1,6 @@
 import { Task } from "../../entities/task";
 import { DbListTasks } from "./dbListTasks";
-import { ListTasksRepository } from "./repository/listTasksRepository";
+import { ListTasksRepository } from "../../usecases/repository/listTasksRepository";
 
 const makeFakeTasks = (): Task[] => {
   return [
