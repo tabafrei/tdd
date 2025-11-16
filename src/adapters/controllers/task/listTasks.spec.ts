@@ -1,7 +1,7 @@
-import { Task } from "../../entities/task";
-import { ListTasks } from "../../usecases/listTasks";
-import { noContent, ok, serverError } from "../presentations/api/httpResponses/httpResponses";
-import { ListTasksController } from "./task/listTasks";
+import { ListTasksController } from "./listTasks";
+import { ListTasks } from "../../../usecases/listTasks";
+import { Task } from "../../../entities/task";
+import { noContent, ok, serverError } from "../../presentations/api/httpResponses/httpResponses";
 
 const makeSut = (): SutTypes => {
     const listTasksStub = makeListTasks();
